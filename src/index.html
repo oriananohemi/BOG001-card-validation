@@ -8,8 +8,45 @@
   <body>
     <header></header>
     <main>
-      <input class="input__number" type="number" name="" id="inputNumber" placeholder="Ingresa tu numero de tarjeta" min="16" max="16">
-      <button id="button">Enviar</button>
+      <div class="contenedor">
+        <section class="tarjeta" id="tarjeta">
+          <div class="delantera">
+            <div class="logoMarca" id="logo-marca">
+              <img class="imagenLogo" src="imagenes/visa.png" alt="">
+            </div>
+            <img class="chipTarjeta" src="imagenes/chip.png" alt="">
+            <div class="datos">
+              <div class="grupo" id="numero">
+                <p>Numero de Tarjeta</p>
+                <p>
+                </p>
+              </div>
+              <div class="flexbox">
+              <div class="grupo" id="nombre">
+                <p>Nombre de Tarjeta</p>
+                <p></p>
+              </div>
+              <div class="grupo" id="expiracion">
+                <p>
+                  Expiracion
+                </p>
+                <p>
+                  <span class="mes">MM</span>/<span class="year">AA</span>
+                </p>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="trasera">
+
+          </div>
+        </section>
+        <div class="contenedorCreditNumber">
+          <input class="creditInfo" type="number" name="" id="inputNumber" placeholder="Ingresa tu numero de tarjeta" min="16" max="16">
+          <input class="creditInfo" type="text" name="" id="inputNumber" placeholder="Ingresa nombre y apellido" min="16" max="16">
+          <button id="button">Enviar</button>
+        </div>
+      </div>
     </main>
     <footer></footer>
     <script src="index.js" type="module"></script>
