@@ -74,6 +74,25 @@ body {
     max-width: 50px;
     width: 100%;
 }
+
+.informacionTarjeta {
+    color: #7d8994;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.tarjetaUsuario{
+    color: #fff;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
 .creditInfo {
     width: 200px;
 }
