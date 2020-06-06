@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&display=swap');
 
 * {
     box-sizing: border-box;
@@ -21,7 +22,20 @@ body {
     margin: auto;
     width: 90%;
 }
-.tarjeta.active {
+
+.tarjeta {
+    backface-visibility: hidden;
+	max-width: 100%;
+	width: 550px;
+	position: relative;
+	color: #fff;
+	transition: .3s ease all;
+	transform: rotateY(0deg);
+	transform-style: preserve-3d;
+	cursor: pointer;
+	z-index: 2;
+}
+.tarjeta:active {
     transform: rotateY(180deg);
 }
 
@@ -39,21 +53,10 @@ body {
 
 /* busca la clase tarjeta y dentro de ella el div con la clase delantera */
 .tarjeta .delantera {
-    background-image: url(imagenes/fondoTarjeta.jpg);
-    background-size: cover;
-    color: white;
-    cursor: pointer;
-    position: relative;
-    max-width: 100%;
-    transition: .3s ease all;
-    transform: rotateY(0deg);
-    /* EFECTO DE ROTACION */
-    transform-style: preserve-3d;
-    /*para que la parte de atras este oculta*/
-    backface-visibility: hidden;
-    width: 550px;
-    z-index: 2; 
-    /* este nos ayuda para decir que propiedad se muestra primero */
+	width: 100%;
+	background: url(imagenes/fondoTarjeta.jpg);
+	background-size: cover;
+
 }
 
 .delantera .logoMarca {
@@ -85,6 +88,7 @@ body {
     color: #fff;
     font-size: 22px;
     text-transform: uppercase;
+    margin-top: 20px;
 }
 
 .flexbox {
@@ -95,4 +99,66 @@ body {
 
 .creditInfo {
     width: 200px;
+}
+
+.trasera {
+    background-image: url(imagenes/fondoTarjeta.jpg);
+    background-size: cover;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    transform: rotateY(180deg);
+}
+
+.trasera .barraMagnetica {
+    height: 40px;
+    background-color: gray;
+    top: 30px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
+.trasera .datos {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.firmaGrupo {
+    width: 70%;
+}
+
+.firma {
+    background: repeating-linear-gradient(skyblue 0, skyblue 5px, gray 5px,gray 10px);
+    color: black;
+    font-family: 'Liu Jian Mao Cao', cursive;
+    font-size: 30px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    text-transform: capitalize;
+}
+
+.ccvGrupo {
+    width: 20%;
+}
+
+.ccv {
+    background-color: white;
+    color: black;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+}
+
+.leyenda {
+    color: gray;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.linkBanco {
+    color: white;
+    font-size: 14px;
 }
