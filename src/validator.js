@@ -26,29 +26,21 @@ const validator = {
   },
   maskify: (creditCardNumber) => {
     let tamano = creditCardNumber.length;
+
     if(tamano > 4){
       let ultimosCuatro = creditCardNumber.slice(-4);
-      let numerosEnmascarados
-      for(let i = 0; i<tamano-4; i++) {
-        console.log(i)
-        numerosEnmascarados += creditCardNumber[i].replace(/\d/g, "#");
-        console.log(numerosEnmascarados)
-      }
+
+      let cadena = "#" 
+
+      let numerosEnmascarados = cadena.repeat(tamano - 4)
       
       return numerosEnmascarados + ultimosCuatro;
+    
+    }else {
+      
+      return creditCardNumber;
+
     }
-    // let numerosAEnmascarar = [];
-    // let numerosSinEnmascarar = [];
-    // for (let i = 0; i < 16; i++) {
-    //   if (i < 12) {
-    //     numerosAEnmascarar += creditCardNumber[i];
-    //   } else {
-    //     numerosSinEnmascarar += creditCardNumber[i];
-    //   }
-    // }
-    // let numerosEnmascarados = numerosAEnmascarar.replace(/\d/g, "#");
-    // console.log(numerosEnmascarados);
-    // return numerosEnmascarados + numerosSinEnmascarar;
   },
 };
 
