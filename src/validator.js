@@ -14,9 +14,7 @@ const validator = {
           arrayDigitos.forEach((element) => {
             valorCalculo += Number(element);
           });
-          console.log(valorCalculo);
           acumulador = acumulador + valorCalculo;
-          console.log(acumulador, valorCalculo);
         } else {
           acumulador = acumulador + valorTemporal;
         }
@@ -26,11 +24,19 @@ const validator = {
     }
     return acumulador % 10 == 0;
   },
-  maskify: () => {
-    // let numerosAEnmascarar = creditCardNumber.length - 4;
-    // let numerosEnmascarados = numerosAEnmascarar.replace(/\d/g, "#");
-    // let arrayNumeros = creditCardNumber.split("");
-    // let ultimosCuatro = arrayNumeros.slice(-4);
+  maskify: (creditCardNumber) => {
+    let tamano = creditCardNumber.length;
+    if(tamano > 4){
+      let ultimosCuatro = creditCardNumber.slice(-4);
+      let numerosEnmascarados
+      for(let i = 0; i<tamano-4; i++) {
+        console.log(i)
+        numerosEnmascarados += creditCardNumber[i].replace(/\d/g, "#");
+        console.log(numerosEnmascarados)
+      }
+      
+      return numerosEnmascarados + ultimosCuatro;
+    }
     // let numerosAEnmascarar = [];
     // let numerosSinEnmascarar = [];
     // for (let i = 0; i < 16; i++) {
@@ -43,7 +49,6 @@ const validator = {
     // let numerosEnmascarados = numerosAEnmascarar.replace(/\d/g, "#");
     // console.log(numerosEnmascarados);
     // return numerosEnmascarados + numerosSinEnmascarar;
-    // return numerosEnmascarados + ultimosCuatro;
   },
 };
 
