@@ -67,14 +67,44 @@
               <a href="#" class="linkBanco">www.tubanco.com</a>
             </div>
         </section>
-        <div class="contenedorCreditNumber">
-          <input class="creditInfo" type="number" name="" id="inputNumber" placeholder="Ingresa tu numero de tarjeta" min="16" max="16">
-          <input class="creditInfo" type="text" name="" id="inputName" placeholder="Ingresa nombre y apellido" min="16" max="16">
-          <button id="button">Enviar</button>
-        </div>
+        <form class="formulario">
+          <div class="grupo">
+            <label for="inputNumber">Numero Tarjeta</label>
+              <input class="creditInfo" type="number" name="" id="inputNumber" placeholder="Ingresa tu numero de tarjeta" maxlength="19">
+            </div>
+            <div class="grupo">
+            <label for="inputName">Nombre</label>
+              <input class="creditInfo" type="text" name="" id="inputName" placeholder="Ingresa nombre y apellido" maxlength="19">
+            </div>
+            <div class="flexbox">
+              <div class="grupo expira">
+                <label for="inputName">Expiracion</label>
+                <div class="flexbox">
+                  <div class="grupoSelect flexbox">
+                        <select name="mes" id="selectMes" class="select">
+                          <option disabled selected>Mes</option>
+                        </select>
+                        <i class="fas fa-angle-down"></i>
+                  </div>
+                  <div class="grupoSelect flexbox">
+                    <select name="year" id="selectYear" class="select">
+                      <option disabled selected>Año</option>
+                    </select>
+                    <i class="fas fa-angle-down"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="grupo ccv">
+                <label for="inputCVV">CVV</label>
+                <input type="text" id="inputCVV" maxlength="3" class="inputCcv">
+              </div>
+            </div>
+            <button id="button" class="button">Enviar</button>
+        </form>
       </div>
     </main>
     <footer></footer>
     <script src="index.js" type="module"></script>
+    <script src="https://kit.fontawesome.com/9fa96555ef.js"></script>
   </body>
 </html>

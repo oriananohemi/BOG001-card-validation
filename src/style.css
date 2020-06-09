@@ -35,7 +35,7 @@ body {
 	cursor: pointer;
 	z-index: 2;
 }
-.tarjeta:active {
+.tarjeta.active {
     transform: rotateY(180deg);
 }
 
@@ -92,13 +92,10 @@ body {
 }
 
 .flexbox {
+    align-items: center;
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-}
-
-.creditInfo {
-    width: 200px;
 }
 
 .trasera {
@@ -161,4 +158,81 @@ body {
 .linkBanco {
     color: white;
     font-size: 14px;
+}
+
+.formulario {
+ background-color: white;
+ border-radius: 10px;
+ padding: 30px;  
+ max-width: 100%; 
+ width: 700px;
+}
+
+.formulario label {
+    color: #7d8994;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+
+.creditInfo,
+.select {
+    border: 2px solid #ced6e0;
+    font-size: 18px;
+    height: 50px;
+    padding: 5px 12px;
+    transition: .3s ease all;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.creditInfo:hover,
+.select:hover {
+    border: 2px solid #93BDED;
+}
+
+.creditInfo:focus,
+.select:focus {
+   outline: rgb(4,4,4);
+   box-shadow: 1px 7px 10px -5px rgba(90, 116, 148, .3);
+}
+
+.expira {
+    width: 100%;
+}
+
+.cvv {
+    min-width: 100px;
+}
+
+.grupoSelect {
+    margin-right: 15px;
+    position: relative;
+    width: 100%;
+}
+
+.fa.fa-angle-down {
+    position: absolute;
+    color: #CED6E0;
+	top: 18px;
+	right: 0;
+    transition: .3s ease all;
+}
+
+.select {
+    -webkit-appearance: none;
+}
+
+.inputCcv {
+    height: 50px;
+}
+
+.button {
+    border: none;
+    padding: 10px;
+    font-size: 22px;
+    color: #fff;
+    background-color: #2364d2;
+    box-shadow: 2px 2px 10px 0px rgba(0, 85, 212, .4);
 }

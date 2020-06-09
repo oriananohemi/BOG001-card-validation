@@ -1,5 +1,11 @@
 import validator from "./validator.js";
 
+let tarjeta = document.getElementById("tarjeta");
+
+tarjeta.addEventListener("click", () =>{
+  tarjeta.classList.toggle("active");
+})
+
 document
   .getElementById("button")
   .addEventListener("click", tomarNumerodeTarjeta);
