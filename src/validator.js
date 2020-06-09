@@ -2,7 +2,7 @@ const validator = {
   isValid: (creditCardNumber) => {
     let arrayNumeros = creditCardNumber.split("").reverse();
     let acumulador = 0;
-    for (let i = 1; i < arrayNumeros.length - 1; i++) {
+    for (let i = 0; i < arrayNumeros.length - 1; i++) {
       let esPar = (i + 1) % 2;
 
       if (esPar == 0) {
@@ -11,9 +11,12 @@ const validator = {
           let tempValueString = "" + valorTemporal + "";
           let arrayDigitos = tempValueString.split("");
           let valorCalculo = 0;
-          arrayDigitos.forEach((element) => {
-            valorCalculo += Number(element);
-          });
+          const reducer = (accumulator, currentValue) => accumulator + currentValue;
+          valorCalculo = arrayDigitos.reduce(reducer)
+          // arrayDigitos.forEach((element) => {
+          //   valorCalculo += Number(element);
+          // });
+          console.log(valorCalculo)
           acumulador = acumulador + valorCalculo;
         } else {
           acumulador = acumulador + valorTemporal;
