@@ -1,10 +1,32 @@
 import validator from "./validator.js";
 
 let tarjeta = document.getElementById("tarjeta");
+let formulario = document.getElementById("formulario")
+let logoMarca = document.getElementById("logoMarca")
 
 tarjeta.addEventListener("click", () =>{
-  tarjeta.classList.toggle("active");
+  if(tarjeta.classList.contains('active')){
+		tarjeta.classList.remove('active');
+	}else {
+		tarjeta.classList.add('active');
+  }
 })
+
+
+for(let i = 1; i<= 12; i++){
+  let opcion = document.createElement('option');
+  opcion.value = i;
+  opcion.innerText = i
+  formulario.selectMes.appendChild(opcion)
+}
+
+const yearActual = new Date().getFullYear();
+for(let i = yearActual; i <= yearActual + 8; i++){
+	let opcion = document.createElement('option');
+	opcion.value = i;
+	opcion.innerText = i;
+	formulario.selectYear.appendChild(opcion);
+}
 
 document
   .getElementById("button")
@@ -22,7 +44,17 @@ function tomarNumerodeTarjeta() {
         numeroDeTarjeta
       )}`;
       document.getElementById("nombre").innerHTML = nombreDeTarjeta;
-      console.log(validator.maskify(numeroDeTarjeta));
+      if(numeroDeTarjeta.charAt(0) === 4) {
+          logoMarca.innerHTML = '';
+          const imagen = document.createElement('img');
+          imagen.src = 'imagenes/visa.png';
+          logoMarca.appendChild(imagen);
+        } else if(valorInput[0] == 5){
+          logoMarca.innerHTML = '';
+          const imagen = document.createElement('img');
+          imagen.src = 'imagenes/mastercard.png';
+          logoMarca.appendChild(imagen);
+        }
     } else {
       alert("Tarjeta de Credito No valido");
     }
