@@ -12,6 +12,17 @@ body {
     font-family: 'Anonymous Pro', monospace;
 }
 
+.header {
+    align-items: center;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 100px;
+}
+
 .contenedorValidador {
     align-items: center;
     display: flex;

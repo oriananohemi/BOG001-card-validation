@@ -44,7 +44,6 @@ function tomarNumerodeTarjeta() {
         numeroDeTarjeta
       )}`;
       document.getElementById("nombre").innerHTML = nombreDeTarjeta;
-      logoMarca.innerHTML = '';
       const imagen = document.createElement('img');
       if(numeroDeTarjeta.charAt(0) == 4){
           imagen.src = 'imagenes/visa.png';
