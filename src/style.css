@@ -175,12 +175,14 @@ body {
 }
 
 .formularioInformacion:hover,
-.formularioInformacion:hover {
+.formularioInformacion:hover,
+.inputCcv:hover    {
     border: 2px solid #93BDED;
 }
 
 .formularioInformacion:focus,
-.formularioInformacion:focus {
+.formularioInformacion:focus,
+.inputCcv:focus {
    outline: rgb(4,4,4);
    box-shadow: 1px 7px 10px -5px rgba(90, 116, 148, .3);
 }
@@ -222,7 +224,8 @@ select {
 
 
 .inputCcv {
-    height: 50px;
+    height: 40px;
+    margin: 10px 0;
 }
 
 .button {
@@ -233,6 +236,7 @@ select {
     background-color: #2364d2;
     box-shadow: 2px 2px 10px 0px rgba(0, 85, 212, .4);
     cursor: pointer;
+    width: 100%;
 }
 
 .button:hover {

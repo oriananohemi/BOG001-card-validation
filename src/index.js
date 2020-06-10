@@ -1,8 +1,8 @@
 import validator from "./validator.js";
 
-let tarjeta = document.getElementById("tarjeta");
-let formulario = document.getElementById("formulario")
-let logoMarca = document.getElementById("logoMarca")
+let tarjeta = document.getElementById("tarjeta"),
+formulario = document.getElementById("formulario"),
+logoMarca = document.getElementById("logoMarca")
 
 tarjeta.addEventListener("click", () =>{
   if(tarjeta.classList.contains('active')){
@@ -39,23 +39,22 @@ function tomarNumerodeTarjeta() {
     alert("ERROR!!.. El campo debe tener un valor numerico");
   } else {
     let valido = validator.isValid(numeroDeTarjeta);
-    if (valido) {
+    if(valido){
       document.getElementById("numero").innerHTML = `${validator.maskify(
         numeroDeTarjeta
       )}`;
       document.getElementById("nombre").innerHTML = nombreDeTarjeta;
-      if(numeroDeTarjeta.charAt(0) === 4) {
-          logoMarca.innerHTML = '';
-          const imagen = document.createElement('img');
+      logoMarca.innerHTML = '';
+      const imagen = document.createElement('img');
+      if(numeroDeTarjeta.charAt(0) == 4){
           imagen.src = 'imagenes/visa.png';
-          logoMarca.appendChild(imagen);
-        } else if(valorInput[0] == 5){
-          logoMarca.innerHTML = '';
-          const imagen = document.createElement('img');
+        } else if(numeroDeTarjeta.charAt(0) == 5){
           imagen.src = 'imagenes/mastercard.png';
-          logoMarca.appendChild(imagen);
+        } else {
+          imagen.src = 'imagenes/banco.png';
         }
-    } else {
+        logoMarca.appendChild(imagen);
+      } else {
       alert("Tarjeta de Credito No valido");
     }
   }
