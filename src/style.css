@@ -7,20 +7,55 @@
     margin: 0;
 }
 
+li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 body {
-    background-color: #ddeefc;
     font-family: 'Anonymous Pro', monospace;
 }
 
 .header {
     align-items: center;
-    background-color: #fff;
+    box-shadow: 0px 4px 12px -5px rgba(0,0,0,0.85);
+    background-color: #ecb4b4ff;
     display: flex;
     justify-content: space-between;
+    padding: 10px 20px;
 }
 
 .logo {
+    border-radius: 35px;
     width: 100px;
+}
+
+.hero {
+    background: linear-gradient(rgba(0,0,0, .5)0%, rgba(0,0,0, .5) 100%), url("imagenes/background.jpeg");
+    background-size: cover;
+    background-position: bottom;
+    min-height: 700px;
+}
+
+.tituloPrincipal {
+    color: white;
+    font-size: 50px;
+}
+
+.flexboxPrincipal {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.tituloValidador {
+    font-size: 50px;
+    margin: 20px 0;
+    text-align: center;
 }
 
 .contenedorValidador {
@@ -166,7 +201,7 @@ body {
 }
 
 .formulario {
- background-color: white;
+ background-color: #ecb4b4ff;
  border-radius: 10px;
  padding: 100px 40px 40px;  
  max-width: 100%; 
@@ -244,13 +279,20 @@ select {
     padding: 10px;
     font-size: 22px;
     color: #fff;
-    background-color: #2364d2;
+    background-color: #999999;
     box-shadow: 2px 2px 10px 0px rgba(0, 85, 212, .4);
     cursor: pointer;
     width: 100%;
 }
-
+/* 
 .button:hover {
     background: #1850b1;
 
+} */
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
