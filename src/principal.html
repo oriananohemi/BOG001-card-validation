@@ -8,38 +8,99 @@
 </head>
 <body>
   <header class="header">
-    <img class="logo" src="imagenes/logo.jpeg" alt="">
+    <h2>You Own Style</h2>
     <nav>
       <ul class="flexbox">
         <li>
-          <a href="principal.html" class="">Inicio</a>
+          <a class="enlaces" href="principal.html">Inicio</a>
         </li>
         <li>
-          <a href="">Productos</a>
+          <a class="enlaces" href="#productos">Productos</a>
+        </li>
+        <li>
+          <a class="enlaces" href="#nosotros">Nosotros</a>
         </li>
       </ul>
     </nav>
   </header>
   <main>
-    <section class="hero flexboxPrincipal">
-        <div>
-          <h2 class="tituloPrincipal">Compra desde Casa</h2>
-        </div>
+    <section class="hero">
+        <div class = "bienvenida">
+            <h1 class="titulo">BIENVENIDA A YOUR OWN STYLE</h1> 
+            <hr class="separacion">
+            <h2 class="bienvenidaSubtitulo">tienda online</h2>
+        </div>     
     </section>
-    <section class="flexbox">
-      <div>
-        <img src="imagenes/modelo1.jpeg" alt="">
-        <h2>Chaqueta Modelo 1</h2>
-      </div>
-      <div>
-        <img src="imagenes/modelo2.jpeg" alt="">
-        <h2>Chaqueta Modelo 2</h2>
-      </div>
-      <div>
-        <img src="imagenes/modelo3.jpeg" alt="">
-        <h2>Chaqueta Modelo 3</h2>
+    <h2 class="titulo">Nuestros Estilos</h2>
+    <section class="flexbox galeriaProductos" id="productos">
+      <img class="imgModeloPrincipal" src="imagenes/modeloPrincipal.jpeg" alt="">
+      <div class="flexboxWrap">
+        <a href="">
+          <article class="modelo">
+            <img class="imgModelo" src="imagenes/modelo1.jpeg" alt="">
+            <div class="flexbox">
+              <h2 class="precioModelo">$3000</h2>
+              <h2 class="titleModelo">Chaqueta Modelo 1</h2>
+            </div>
+          </article>
+        </a>
+        <a href="">
+          <article class="modelo">
+            <img  class="imgModelo" src="imagenes/modelo2.jpeg" alt="">
+            <div class="flexbox">
+              <h2 class="precioModelo">$3000</h2>
+              <h2 class="titleModelo">Chaqueta Modelo 2</h2>
+            </div>
+          </article>
+        </a>
+        <a href="">
+          <article class="modelo">
+            <img class="imgModelo" src="imagenes/modelo3.jpeg" alt="">
+            <div class="flexbox">
+              <h2 class="precioModelo">$3000</h2>
+              <h2 class="titleModelo">Chaqueta Modelo 3</h2>
+            </div>
+          </article>
+        </a>
+        <a href="">
+          <article class="modelo">
+            <img class="imgModelo" src="imagenes/modelo4.jpeg" alt="">
+            <div class="flexbox">
+              <h2 class="precioModelo">$3000</h2>
+              <h2 class="titleModelo">Chaqueta Modelo 4</h2>
+            </div>
+          </article>   
+        </a>   
+        <a href="">
+          <article class="modelo">
+            <img class="imgModelo" src="imagenes/modelo5.jpeg" alt="">
+            <div class="flexbox">
+              <h2 class="precioModelo">$3000</h2>
+              <h2 class="titleModelo">Chaqueta Modelo 5</h2>
+            </div>
+          </article>    
+        </a>  
+        <a href="">
+          <article class="modelo">
+            <img class="imgModelo" src="imagenes/modelo6.jpeg" alt="">
+            <div class="flexbox">
+              <h2 class="precioModelo">$3000</h2>
+              <h2 class="titleModelo">Chaqueta Modelo 6</h2>
+            </div>
+          </article>  
+        </a>    
       </div>
     </section>
+    <section class="info-container" id="nosotros">
+          <h2 class="titulo">Acerca De Nosotros</h2>
+          <p>Nosotros somos una tienda 100% online,tenemos un objetivo primordial es trabajar para que tú  te identifiques con la prenda que elijas</p>
+          <p>Cada diseño son esclusivamente diseñados siempre pensando en las diferentes diversidades de gustos</p>
+          <p>Trabajamos cada diseño con pasión para asegurarnos de tenerte siempre con nosotros</p>
+     <div class="info-imagen">
+          <img src="imagenes/detalle.webp" alt = ""> 
+      </div>
+       
+      </section>
   </main>
   <footer class="footer">
     <p>&copy; You Own Style - 2020 | Todos los derechos reservados </p>
