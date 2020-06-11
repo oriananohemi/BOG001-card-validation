@@ -2,7 +2,8 @@ import validator from "./validator.js";
 
 let tarjeta = document.getElementById("tarjeta"),
 formulario = document.getElementById("formulario"),
-logoMarca = document.getElementById("logoMarca")
+logoMarca = document.getElementById("logoMarca"),
+ modal = document.getElementById("myModal");
 
 tarjeta.addEventListener("click", () =>{
   if(tarjeta.classList.contains('active')){
@@ -28,6 +29,14 @@ for(let i = yearActual; i <= yearActual + 8; i++){
 	formulario.selectYear.appendChild(opcion);
 }
 
+function loadModal(){
+   modal.style.display = "block";
+}
+
+document.getElementById("close").addEventListener("click", () =>{
+  modal.style.display = "none";
+} )
+
 document
   .getElementById("button")
   .addEventListener("click", tomarNumerodeTarjeta);
@@ -36,7 +45,7 @@ function tomarNumerodeTarjeta() {
   let numeroDeTarjeta = document.getElementById("inputNumber").value;
   let nombreDeTarjeta = document.getElementById("inputName").value;
   if (numeroDeTarjeta == "") {
-    alert("ERROR!!.. El campo debe tener un valor numerico");
+    loadModal()
   } else {
     let valido = validator.isValid(numeroDeTarjeta);
     if(valido){
@@ -55,7 +64,7 @@ function tomarNumerodeTarjeta() {
         }
         logoMarca.appendChild(imagen);
       } else {
-      alert("Tarjeta de Credito No valido");
+      loadModal()
     }
   }
 }
