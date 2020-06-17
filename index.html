@@ -3,26 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>Tarjeta de crédito válida</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Noticia+Text&family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="header">
-      <img class="logo" src="imagenes/logo.png" alt="">
+      <h2>YOUR OWN STYLE</h2>
       <nav>
-        <ul>
+        <ul class="flexbox">
           <li>
-            <a href="">Inicio</a>
-          </li>
-          <li>
-            <a href="">Productos</a>
+            <a href="principal.html" class="enlaces">Inicio</a>
           </li>
         </ul>
       </nav>
     </header>
     <main>
-      <section>
-
-      </section>
+        <h1 class="tituloValidador">Metodo de Pago</h1>
       <section class="contenedorValidador">
 
         <div class="tarjeta" id="tarjeta">
@@ -64,8 +60,8 @@
                     Firma
                   </p>
                   <div class="firma">
-                    <p>
-                    </p>
+                    <!-- <p id="firma">
+                    </p> -->
                   </div>
                 </div>
                 <div class="grupo ccvContenedor" id="ccv">
@@ -118,7 +114,21 @@
         </form>
       </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <p>&copy; Your Own Style - 2020 | Todos los derechos reservados </p>
+      <span>Daniela Ramirez - Oriana Reina</span>
+    </footer>
+    <div id="myModal" class="modal">
+     <div class="modal-content">
+        <div class="modal-header flexbox" id="close">
+          <h2>Por favor</h2>
+         <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+          <p>¡Debes ingresar un numero de Tarjeta de Credito Valida!</p>
+        </div>
+      </div>
+    </div>
     <script src="index.js" type="module"></script>
     <script src="https://kit.fontawesome.com/9fa96555ef.js"></script>
   </body>
