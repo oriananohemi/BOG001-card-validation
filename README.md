@@ -1,22 +1,44 @@
-Tarjeta de credito valida
+# Tarjeta de credito valida
 
-E-commerce de chaquetas, YOUR OWN STYLE, puedes comprar chaquetas pagando con tu tarjeta de credito
+## Definicion
+
+Tienda de chaquetas online.
+ 
+YOUR OWN STYLE
+
+Diseñamos la pagina web pensando en la comodidad de las mujeres, para que puedan comprar sin salir de casa, le aseguramos una compra segura al poder escoger el metodo de pago de su preferencia.
+
+## Investigacion UI
+
+Nuestros principales usuarios son mujeres. Cuyo principal ojetivo es comprar desde la comodidad de su casa, teniendo la seguridad de que el producto llegara hasta el lugar donde se encuentren.
+
+## Investigacion UX
+
+###Prototipo 1
+
+<img src="src/imagenes/prototipo1.jpeg" height="300" width="300">
+
+###Prototipo 2
+
+<img src="src/imagenes/prototipo2A.jpeg" height="300" width="300">
+<img src="src/imagenes/prototipo2B.jpeg" height="300" width="300">
+<img src="src/imagenes/prototipo2C.jpeg" height="300" width="300">
+
+###Prototipo Final
+
+<img src="src/imagenes/modelo1.png" height="300" width="300">
+<img src="src/imagenes/modelo2.png" height="300" width="300">
+<img src="src/imagenes/modelo3.png" height="300" width="300">
 
 
-## 3. Objetivos de aprendizaje
 
-Trabajando en parejas aprenderán a construir una aplicación web que interactuará
-con lx usuarix final a través del navegador, utilizando HTML, CSS y JavaScript
-como tecnologías.
-
-Reflexiona y luego marca los objetivos que has llegado a **entender** y
-**aplicar** en tu proyecto.
+## Objetivos de aprendizaje
 
 ### UX
 
 * [x] Diseñar la aplicación pensando y entendiendo al usuario
 * [x] Crear prototipos para obtener feedback e iterar
-* [x] Aplicar los principios de diseño visual
+* [ ] Aplicar los principios de diseño visual
 
 ### HTML y CSS
 
