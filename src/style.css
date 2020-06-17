@@ -127,6 +127,7 @@ body {
     border-radius: 10px;
     padding: 10px 20px;
     font-size: 16px;
+    margin: 10px;
 }
 
 .modelo .flexbox {
@@ -162,12 +163,23 @@ body {
 /* PAGINA CONFIRMACION DE COMPRA */
 
 .contenedorCompra{
+    padding: 20px 0;
     text-align: center;
+    min-height: 700px;
 }
 
 .modelo .flexbox {
     justify-content: center;
     margin: 20px 0;
+}
+
+.regresar {
+    background-color: #999;
+    color: white;
+}
+
+.regresar:hover {
+    background-color: black;
 }
 
 /* PAGINA DEL VALIDADOR */

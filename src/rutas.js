@@ -62,7 +62,7 @@ function confirmacion(id){
 }
 
 function cargaInicial(){
-  var producto = localStorage.getItem('producto');
+  let producto = localStorage.getItem('producto');
   producto = JSON.parse(producto);
   document.getElementById("nombre").innerText = producto.nombre
   document.getElementById("valor").innerText = producto.valor
