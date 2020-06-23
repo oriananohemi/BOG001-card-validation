@@ -17,8 +17,8 @@ tarjeta.addEventListener("click", () =>{
 for(let i = 1; i<= 12; i++){
   let opcion = document.createElement('option');
   opcion.value = i;
-  opcion.innerText = i
-  formulario.selectMes.appendChild(opcion)
+  opcion.innerText = i;
+  formulario.selectMes.appendChild(opcion);
 }
 
 const yearActual = new Date().getFullYear();
@@ -68,5 +68,3 @@ function tomarNumerodeTarjeta() {
     }
   }
 }
-
-console.log(validator);
