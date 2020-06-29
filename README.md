@@ -58,7 +58,7 @@ Nuestros principales usuarios son mujeres. Cuyo principal ojetivo es comprar des
 * [x] Uso de condicionales
 * [x] Uso de bucles
 * [x] Uso de funciones
-* [ ] Datos atómicos y estructurados
+* [x] Datos atómicos y estructurados
 * [x] Utilizar ES Modules (`import` | `export`).
 
 ### Testing

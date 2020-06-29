@@ -5,9 +5,9 @@ const validator = {
     let acumulador = 0;
     let contArray = 1;
     arrayNumeros.forEach(number => {
-      let esPar = (contArray % 2);
+      const esPar = contArray % 2;
       if (esPar == 0) {
-        let valorTemporal = (Number(number) * 2);
+        let valorTemporal = Number(number) * 2;
         if (valorTemporal >= 10) {
           let tempValueString = valorTemporal.toString();
           let arrayDigitos = tempValueString.split('');
@@ -24,8 +24,7 @@ const validator = {
       }
       contArray++;
     });
-    return ((acumulador % 10) == 0);
-
+    return (acumulador % 10) == 0;
   },
   maskify: (creditCardNumber) => {
     const tamano = creditCardNumber.length;
