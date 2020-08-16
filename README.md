@@ -8,28 +8,36 @@ YOUR OWN STYLE
 
 Diseñamos la pagina web pensando en la comodidad de las mujeres, para que puedan comprar sin salir de casa, le aseguramos una compra segura al poder escoger el metodo de pago de su preferencia.
 
+**Demo** https://oriananohemi.github.io/BOG001-card-validation/principal.html
+
 ## Investigacion UI
 
 Nuestros principales usuarios son mujeres. Cuyo principal ojetivo es comprar desde la comodidad de su casa, teniendo la seguridad de que el producto llegara hasta el lugar donde se encuentren.
 
 ## Investigacion UX
 
-###Prototipo 1
+### Prototipo 1
 
 <img src="src/imagenes/prototipo1.jpeg" height="300" width="300">
 
-###Prototipo 2
+### Prototipo 2
 
 <img src="src/imagenes/prototipo2A.jpeg" height="300" width="300">
 <img src="src/imagenes/prototipo2B.jpeg" height="300" width="300">
 <img src="src/imagenes/prototipo2C.jpeg" height="300" width="300">
 
-###Prototipo Final
+### Prototipo Final
 
 <img src="src/imagenes/modelo1.png" height="300" width="300">
 <img src="src/imagenes/modelo2.png" height="300" width="300">
 <img src="src/imagenes/modelo3.png" height="300" width="300">
 
+### Resultado
+<img src="src/imagenes/demo3.png" width="400">
+<img src="src/imagenes/demo1.png" width="400">
+<img src="src/imagenes/demo2.png" width="400">
+<img src="src/imagenes/demo.png" width="400">
+<img src="src/imagenes/demo4.png" width="400">
 
 
 ## Objetivos de aprendizaje
