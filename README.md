@@ -8,7 +8,7 @@ Tienda de chaquetas online.
 
 Diseñamos la pagina web pensando en la comodidad de las mujeres, para que puedan comprar sin salir de casa, le aseguramos una compra segura al poder escoger el metodo de pago de su preferencia.
 
-[Demo del Proyecto](https://oriananohemi.github.io/BOG001-card-validation/principal.html)
+[Demo del Proyecto](https://oriananohemi.github.io/card-validation/principal.html)
 
 ## Investigacion UI
 
